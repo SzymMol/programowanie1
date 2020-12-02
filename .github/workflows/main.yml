@@ -6,6 +6,9 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-    - run: echo hello world
+    - uses: actions/checkout@v2
+    - run: g++ -o kostka kostka.cpp
+    - run: ./kostka
+    - run: ./kostka
     
      
