@@ -8,5 +8,5 @@ int main()
     random_device r;
     default_random_engine e(r());
     uniform_int_distribution<int> uniform_dist (1,6);
-    return uniform_dist(e);
+    cout<<uniform_dist(e);
 }
