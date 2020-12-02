@@ -1,7 +1,8 @@
 on: [push, pull_request]
 jobs:
   zadanie:
-    steps: 
+    runs-on: ubuntu-latest
+    steps:
     - run: echo hello world
     
      
